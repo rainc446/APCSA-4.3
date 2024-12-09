@@ -55,14 +55,15 @@ public class Main {
         return repeats;
     }
 
-    public static int numOfPalindromes() {
+    public static int numOfPalindromes() throws FileNotFoundException {
+        s = new Scanner(f);
         int palindromes = 0;
 
         String targetString;
         while (s.hasNext()) {
             targetString = s.nextLine();
             String reversedString = "";
-            for (int i = targetString.length() - 1; i > 0; i--) {
+            for (int i = targetString.length() - 1; i >= 0; i--) {
                 reversedString += targetString.charAt(i);
             }
             if (reversedString.equals(targetString)) palindromes++;
@@ -86,6 +87,6 @@ public class Main {
 //    }
 //    return palindromes;
 //}
-
+//
 
 }
