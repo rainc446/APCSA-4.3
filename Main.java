@@ -52,13 +52,12 @@ public class Main {
         return repeats;
     }
 
-    public static int numOfPalindromes() throws FileNotFoundException{
+    public static int numOfPalindromes() throws FileNotFoundException {
         s = new Scanner(f);
         int palindromes = 0;
 
         String targetString;
-        while(s.hasNext())
-        {
+        while (s.hasNext()) {
             targetString = s.nextLine();
             String reversedString = new StringBuilder(targetString).reverse().toString();
 
@@ -67,3 +66,5 @@ public class Main {
             }
         }
         return palindromes;
+    }
+}
