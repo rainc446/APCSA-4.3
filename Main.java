@@ -66,4 +66,4 @@ public class Main {
                 palindromes++;
             }
         }
-        return pali
+        return palindromes;
